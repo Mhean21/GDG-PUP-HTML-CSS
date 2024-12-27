@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Profile Card</title>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="cover-photo">
+            <img src="https://i.pinimg.com/736x/f7/14/85/f71485546309b4ba5360a2574b9236c9.jpg" alt="Cover Photo">
+        </div>
+
+
+        <div class="profile-picture">
+            <img src="https://i.pinimg.com/736x/dc/7e/4a/dc7e4a3fdcde6af0fec55e2eb32c5b74.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h1>Mhelby Anne Abundo</h1>
+            <h2>19 years old</h2>
+            <br>
+            <p>I'm a beginner programmer, excited to learn, grow, and turn my ideas into something meaningful in the tech world.</p>
+        </div>
+        <br>
+        <div class="social">
+            <div class="social-links">
+                <a href="https://www.facebook.com/mhelbyanne.abundo/" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/Mhean21" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+   
+</body>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #d7d4d49c;
+        }
+
+       
+        .profile-card {
+            width: 500px;
+            border-radius: 10px;
+            height: 500px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color:  #ffffff;
+            text-align: center;
+        }
+
+  
+        .cover-photo img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+      
+        .profile-picture {
+            margin-top: -50px;
+        }
+
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid rgb(201, 128, 198);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: ;
+        }
+
+     
+        .profile-info h1 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .profile-info h2 {
+            margin: 0;
+            font-size: 16px;
+            color: #3a3434;
+        }
+        .profile-info p{
+            margin:0;
+            font-size: 16px;
+            color:#302b2b;
+            text-align: center;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #444;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            color: #f597f4;
+        }
+    </style>
+</html>

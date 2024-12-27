@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Subscribe Button</title>
+</head>
+<body>
+    <div class="container">
+        <h1>SUBSCRIBE</h1>
+    </div>
+</body>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background-color: #FF0000;
+            width: 400px;
+            height: 200px;
+            margin: 150px auto 0 auto;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+            position: relative;
+        }
+
+        h1 {
+            color: white;
+            margin: 0;
+            font-size: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none; /* Makes the text non-interactive */
+        }
+
+        .container:hover {
+            background-color: #CC0000;
+            transform: scale(1.05);
+        }
+
+        .container:active {
+            transform: scale(0.98);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+        }
+    </style>
+</html>

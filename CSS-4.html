@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <style>
+    body {
+      background-color: #000;
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: "Bebas Neue", sans-serif;
+      color: #f1f1f1;
+      text-shadow: #2e2e2e;
+      font-size: 3rem;
+      margin-top: 20px;
+    }
+
+    #subtitle {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      color: #cfcfcf;
+      margin-bottom: 20px;
+    }
+
+
+    .flexboxContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 5%;
+      width: 100%;
+      height: 500px;
+    }
+
+ 
+    .flexboxContainer > div {
+      width: 20%;
+      height: 50%;
+      background-image: linear-gradient(to right, rgba(12, 62, 224, 0), rgb(150, 105, 47));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5%;
+      padding: 3%;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      border-radius: 40px;
+    }
+
+    .flexboxContainer > div:hover {
+      background-color: #2e2e2e;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+      transform: scale(1.1);
+    }
+
+   
+    .flexboxContainer a {
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      color: #fff;
+    }
+
+    .flexboxContainer img {
+      width: 100%;
+      border-radius: 5px;
+      height: 130px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>WEB DEVELOPMENT BASICS</h1>
+  <p id="subtitle">Start Your Journey Here!</p>
+
+
+  <div class="flexboxContainer">
+
+    <div id="box">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Logo">
+        <h1>HTML</h1>
+        <p> Structure the web</p>
+      </a>
+    </div>
+    <div id="box2">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Logo">
+        <h1>CSS</h1>
+        <p>Style the web</p>
+      </a>
+    </div>
+    <div id="box3">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+        <h1>JavaScript</h1>
+        <p> Make web pages interactive</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
+
